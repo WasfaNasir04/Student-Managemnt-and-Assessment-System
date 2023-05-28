@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>DB2020_CS_145</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ReportingServices.ReportViewerControl.Winforms" Version="150.1484.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Rubric.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Clo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Assessment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AssessmentComponent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StudentAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RubricLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StudentResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ClassAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
